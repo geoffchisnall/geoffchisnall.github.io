@@ -1,0 +1,5 @@
+I"<p>a fortigate i manage starting giving issues where the SNMPD process would crash with a signal 6 and restart itself on a regular basis.
+<br />
+after some troubleshooting it seems that it may be caused by duplicate snmp-index on multiple intefaces.
+<br /></p>
+:ET
