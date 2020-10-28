@@ -1,0 +1,5 @@
+.jekyll-cache/Jekyll/Cache
+_site
+Gemfile.lock
+.jar
+vendor
