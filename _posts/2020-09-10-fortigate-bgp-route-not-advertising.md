@@ -2,8 +2,8 @@
 title: fortigate bgp route is not advertising
 author: mooncake
 date: 2020-09-10 04:00pm
-categories: [blog]
-tags: [fortigate, fortinet, firewall, bgp]
+categories: [blog, fortigate]
+tags: [fortigate, fortinet, firewall]
 math: true
 image: /assets/img/sample/fgt.png
 ---

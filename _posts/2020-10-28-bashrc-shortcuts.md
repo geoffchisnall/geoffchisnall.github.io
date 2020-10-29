@@ -1,16 +1,16 @@
 ---
-title: shortcuts with bashrc
+title: aliases with bashrc
 author: mooncake
 date: 2020-10-28 11:30am
 categories: [blog]
-tags: [bash, shortcuts, linux, alias]
+tags: [bash, linux, alias]
 math: true
 image: /assets/img/sample/bash.png
 ---
 
 bashrc is a shell script that gets executes whenever a user logins in via bash terminal. This script can contain configuration such as coloring, command aliases, environment variables, etc.
 <br>
-one thing i have started doing is using it to create shortcuts for commands, so instead of typing out a long command i now just run a short command.
+one thing i have started doing is using it to create aliases for commands, so instead of typing out a long command i now just run a short command.
 <br>
 whenever you edit the bashrc file you would have to reload the file from commandline or logout and login again to your bash shell. one method to edit it without too much effort is the following
 
