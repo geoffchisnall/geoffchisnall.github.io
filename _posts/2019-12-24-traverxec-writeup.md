@@ -1,7 +1,7 @@
 ---
 title: traverxec writeup
 author: mooncake
-date: 2019-12-22 11:30am
+date: 2019-12-24 18:30am
 categories: [hackthebox]
 tags: [hackthebox, writeup]
 math: true
