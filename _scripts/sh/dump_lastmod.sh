@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/bash
 #
 # Find out the posts that have been modified and record
 # its lastmod information to file '_data/updates.yml'

@@ -3,7 +3,7 @@ title: shortcuts with bashrc
 author: mooncake
 date: 2020-10-28 11:30am
 categories: [blog]
-tags: [bash, shortcuts, linux]
+tags: [bash, shortcuts, linux, alias]
 math: true
 image: /assets/img/sample/bash.png
 ---
