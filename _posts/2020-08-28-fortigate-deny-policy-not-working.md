@@ -1,6 +1,6 @@
 ---
 title: fortigate deny policy not working
-author: mooncake
+author: mooncakeza
 date: 2020-08-28 04:00pm
 categories: [blog, fortigate]
 tags: [fortigate, fortinet, firewall]

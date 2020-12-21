@@ -1,6 +1,6 @@
 ---
 title: fortigate ipsec tunnel troubleshoot
-author: mooncake
+author: mooncakeza
 date: 2020-12-11 12:00pm
 categories: [blog, fortigate]
 tags: [fortigate, fortinet, firewall]

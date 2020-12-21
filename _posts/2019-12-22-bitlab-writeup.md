@@ -1,6 +1,6 @@
 ---
 title: bitlab writeup
-author: mooncake
+author: mooncakeza
 date: 2019-12-22 11:30am
 categories: [hackthebox]
 tags: [hackthebox, writeup]
