@@ -10,6 +10,33 @@ image: /assets/img/sample/fgt.png
 
 i configured a new subnet, 10.0.4.0/24, for bgp in the prefix-list but it did not show up in the advertised routes.
 
+to find the name of your prefix-list. in the below example, it is called "NAME-OUT"
+
+```
+firewall-01 # show router prefix-list
+config router prefix-list
+	edit "NAME-OUT"
+		config rule
+			edit 1
+				set prefix 10.0.2.0 255.255.255.0
+				unset ge
+				unset le
+			next
+			edit 2
+				set prefix 10.0.3.0 255.255.255.0
+				unset ge
+				unset le
+			next
+			edit 2
+				set prefix 10.0.4.0 255.255.255.0
+				unset ge
+				unset le
+			next
+		end
+	next
+end	
+```
+
 it showed up in the prefix-list
 
 ```
