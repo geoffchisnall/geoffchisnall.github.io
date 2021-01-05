@@ -83,3 +83,11 @@ Network		Next Hop	Metric LocPrf Weight Path
 *> 10.0.3.0/24	10.0.0.1	33456 ?
 *> 10.0.4.0/24	10.0.0.1	33456 ?
 ````
+if it doesn't show up. make sure you have a static route for the subnet.
+
+```
+firewall-01 # get router info routing-table static
+S    10.0.2.0/24 [10/0] via 10.10.1.1, port1
+S    10.0.3.0/24 [10/0] via 10.10.1.1, port1
+S    10.0.4.0/24 [10/0] via 10.10.1.1, port1
+````
