@@ -8,11 +8,11 @@ math: true
 image: /assets/img/sample/bash.png
 ---
 
-bashrc is a shell script that gets executes whenever a user logins in via bash terminal. This script can contain configuration such as coloring, command aliases, environment variables, etc.
+bashrc is a shell script that executes whenever a user log in via bash terminal. This script can contain configuration settings such as coloring, command aliases, environment variables, etc.
 <br>
 one thing i have started doing is using it to create aliases for commands, so instead of typing out a long command i now just run a short command.
 <br>
-whenever you edit the bashrc file you would have to reload the file from commandline or logout and login again to your bash shell. one method to edit it without too much effort is the following
+whenever you edit the bashrc file you would have to reload the file from command line or logout and login again to your bash shell. one method to edit it without too much effort is the following
 
 add the following line to your bashrc:
 ```
