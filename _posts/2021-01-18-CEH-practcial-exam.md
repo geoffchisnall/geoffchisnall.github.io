@@ -8,7 +8,7 @@ math: true
 image: /assets/img/sample/ceh_practical.jpg
 ---
 <p>
-let's start off with saying, i was originally not planning to do the <a href="https://www.eccouncil.org/programs/certified-ethical-hacker-ceh-practical/"><b>C|EH Pratical</b></a>. i only found out about this towards the end of last year and then the thought popped in my head that maybe i should just do this as i already passed the <a href="https://www.eccouncil.org/programs/certified-ethical-hacker-ceh/"><b>C|EH</b></a> last year May and once you get through the C|EH practical exam, you get the <a href="https://www.eccouncil.org/programs/certified-ethical-hacker-ceh-master/"><b>C|EH Master</b></a> certification.
+let's start off with saying, i was originally not planning to do the <a href="https://www.eccouncil.org/programs/certified-ethical-hacker-ceh-practical/"><b>C|EH Practical</b></a>. i only found out about this towards the end of last year and then the thought popped in my head that maybe i should just do this as i already passed the <a href="https://www.eccouncil.org/programs/certified-ethical-hacker-ceh/"><b>C|EH</b></a> last year May and once you get through the C|EH practical exam, you get the <a href="https://www.eccouncil.org/programs/certified-ethical-hacker-ceh-master/"><b>C|EH Master</b></a> certification.
 </p>
 <p>
 i am not going to go into the setting up and booking the exam, i am just going to blog about my experiance of the exam itself.
