@@ -30,8 +30,8 @@ i have to add, my experience doing the exam was not enjoyable for me. you have t
 <p>
 needless to say, i recieved both my certifications and badges.
 <br>
-<img src="/assets/img/sample/CEHPRACTICAL.png" width="200" height="200" align="left">
-<img src="/assets/img/sample/CEHMASTER.png" width="200" height="200" align="left">
+<img src="/assets/img/sample/CEHPRACTICAL.png" width="200" height="200">
+<img src="/assets/img/sample/CEHMASTER.png" width="200" height="200">
 </p>
 <p>
 did i learn anything from this exam, no. probably because i had all the knowledge already and i actually didn't use google or my notes at all, except for those two questions i was struggling with to confirm if my methods were working and they were so i could not understand why it was not working. oh well. 
