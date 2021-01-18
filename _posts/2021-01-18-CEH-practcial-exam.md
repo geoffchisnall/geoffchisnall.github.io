@@ -1,5 +1,5 @@
 ---
-title: CEH practical exam
+title: C|EH practical exam
 author: mooncakeza
 date: 2021-01-18 9:00pm
 categories: [blog, exam, eccouncil]
