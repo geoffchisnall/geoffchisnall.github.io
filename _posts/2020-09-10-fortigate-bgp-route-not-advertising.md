@@ -1,5 +1,5 @@
 ---
-title: fortigate bgp route is not advertising
+title: Fortigate BGP Route Is Not Advertising
 author: mooncakeza
 date: 2020-09-10 04:00pm
 categories: [blog, fortigate]
@@ -8,9 +8,9 @@ math: true
 image: /assets/img/sample/fgt.png
 ---
 
-i configured a new subnet, 10.0.4.0/24, for bgp in the prefix-list but it did not show up in the advertised routes.
+I configured a new subnet, 10.0.4.0/24, for BGP in the prefix-list but it did not show up in the advertised routes.
 
-to find the name of your prefix-list. in the below example, it is called "NAME-OUT"
+To find the name of your prefix-list run the command <b><i>show router prefix-list</i></b>. in the below example, it is called <i>"NAME-OUT"</i>
 
 ```
 firewall-01 # show router prefix-list
@@ -37,7 +37,7 @@ config router prefix-list
 end	
 ```
 
-it showed up in the prefix-list
+It showed up in the prefix-list
 
 ```
 firewall-01 # get router info bgp prefix-list NAME-OUT
@@ -51,7 +51,7 @@ Network		Next Hop	Metric LocPrf Weight Path
 *> 10.0.4.0/24	10.0.0.1	33456 ?
 ````
 
-but not in the advertised routes
+But not in the advertised routes
 
 ```
 firewall-01 # get router info bgp neighbors 10.10.10.1 advertised-route
@@ -64,13 +64,13 @@ Network		Next Hop	Metric LocPrf Weight Path
 *> 10.0.3.0/24	10.0.0.1	33456 ?
 ```
 
-to resolve this i needed to a bgp soft reset
+To resolve this I needed to do a BGP soft reset
 
 ```
 exec router clear bgp all soft
 ```
 
-once that was done, the new subnet showed up in the advertised routes
+Once that was done, the new subnet showed up in the advertised routes
 
 ```
 firewall-01 # get router info bgp prefix-list NAME-OUT
@@ -83,7 +83,7 @@ Network		Next Hop	Metric LocPrf Weight Path
 *> 10.0.3.0/24	10.0.0.1	33456 ?
 *> 10.0.4.0/24	10.0.0.1	33456 ?
 ````
-if it doesn't show up. make sure you have a static route for the subnet.
+If it doesn't show up, make sure you have a static route for the subnet.
 
 ```
 firewall-01 # get router info routing-table static

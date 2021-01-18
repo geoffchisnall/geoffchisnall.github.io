@@ -1,5 +1,5 @@
 ---
-title: aliases with bashrc
+title: Aliases With bashrc
 author: mooncakeza
 date: 2020-10-28 11:30am
 categories: [blog]
@@ -8,21 +8,21 @@ math: true
 image: /assets/img/sample/bash.png
 ---
 
-bashrc is a shell script that executes whenever a user log in via bash terminal. This script can contain configuration settings such as coloring, command aliases, environment variables, etc.
+bashrc is a shell script that executes whenever a user logs in via bash terminal. This script can contain configuration settings such as coloring, command aliases, environment variables, etc.
 <br>
-one thing i have started doing is using it to create aliases for commands, so instead of typing out a long command i now just run a short command.
+One thing I have started doing is using it to create aliases for commands, so instead of typing out a long command I now just run a short command.
 <br>
-whenever you edit the bashrc file you would have to reload the file from command line or logout and login again to your bash shell. one method to edit it without too much effort is the following
+Whenever you edit the bashrc file you would have to reload the file from command line or logout and login again to your bash shell. To circumvent this, one method would be to do the following:
 
-add the following line to your bashrc:
+Add the following line to your bashrc:
 ```
 alias bashrc='vi ~/.bashrc ; source ~/.bashrc'
 ```
 <br>
-so now whenever you run bashrc, edit the file, exit and wala!
+So now whenever you run bashrc, edit the file, exit and wala!
 <br>
 <br>
-some useful commands i have added:
+Some useful commands I have added:
 <br>
 ```
 #Mini Python Webserver

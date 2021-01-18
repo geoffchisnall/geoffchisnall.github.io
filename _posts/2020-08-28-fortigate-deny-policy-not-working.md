@@ -1,5 +1,5 @@
 ---
-title: fortigate deny policy not working
+title: Fortigate Deny Policy Not Working
 author: mooncakeza
 date: 2020-08-28 04:00pm
 categories: [blog, fortigate]
@@ -8,9 +8,9 @@ math: true
 image: /assets/img/sample/fgt.png
 ---
 
-so i came across when setting up a deny policy that it was not working.
+So I came across when setting up a deny policy that it was not working.
 <br>
-after some troubleshooting i found out that because the rule was for an inbound NAT, you have to configure the match-vip option on the policy.
+After some troubleshooting I found out that because the rule was for an inbound NAT, you have to configure the <b><i>match-vip option</i></b> on the policy to enable.
 <br>
 
 ```

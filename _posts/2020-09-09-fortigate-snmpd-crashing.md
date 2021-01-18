@@ -1,5 +1,5 @@
 ---
-title: fortigate SNMPD process crashing
+title: Fortigate SNMPD Process Crashing
 author: mooncakeza
 date: 2020-09-09 01:00pm
 categories: [blog, fortigate]
@@ -8,9 +8,9 @@ math: true
 image: /assets/img/sample/fgt.png
 ---
 
-a fortigate i manage starting giving issues where the SNMPD process would crash with a signal 6 and restart itself on a regular basis.
+A fortigate I manage starting giving issues where the SNMPD process would crash with a signal 6 and restart itself on a regular basis.
 <br>
-after some troubleshooting it seems that it may be caused by duplicate snmp-index on multiple intefaces.
+After some troubleshooting it seems that it may be caused by duplicate snmp-index on multiple intefaces.
 <br>
 
 ```
@@ -39,7 +39,7 @@ config system interface
     next
 ```
 
-to resolve this issue change the snmp-index:
+To resolve this issue change the snmp-index:
 
 
 ```

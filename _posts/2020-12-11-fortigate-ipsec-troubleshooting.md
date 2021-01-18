@@ -1,5 +1,5 @@
 ---
-title: fortigate ipsec tunnel troubleshoot
+title: Fortigate IPSEC Tunnel Troubleshoot
 author: mooncakeza
 date: 2020-12-11 12:00pm
 categories: [blog, fortigate]
@@ -8,12 +8,12 @@ math: true
 image: /assets/img/sample/fgt.png
 ---
 
-i have been having an issue with setting up an ipsec tunnel between a client and me.
-setting it up as per the spec and it is not connecting. it is hard to diagnose from the frontend as the frontend logs are pretty much useless for troubleshooting.
+I have been having an issue with setting up an IPSEC tunnel between a client and me.
+Setting it up as per the spec and it was not connecting. It was hard to diagnose from the frontend as the frontend logs are pretty much useless for troubleshooting.
 
-so we have to do this via the cli. to achieve this just run the following commands.
+So we have to do this via the CLI (command line interface). To achieve this just run the following commands.
 
-get the tunnel name:
+To get the tunnel name:
 
 ```
 firewall-01 # get vpn ipsec tunnel summary
@@ -21,14 +21,14 @@ firewall-01 # get vpn ipsec tunnel summary
 
 ````
 
-setup the log to filter only the selected tunnel
+Setup the log to filter only the selected tunnel
 
 ```
 firewall-01 # diagnose vpn ike log-filter name "IPSEC_TUN_01"
 
 ```
 
-setup to debug
+Setup to debug
 
 ```
 firewall-01 # diagnose debug application ike -1
@@ -36,4 +36,4 @@ firewall-01 # diagnose debug enable
 
 ```
 
-once that is done, your terminal will be outputting the ipsec log which you can look at to diagnose for more troubleshooting.
+Once that is done, your terminal will be outputting the IPSEC log which you can look at to diagnose for more troubleshooting.
