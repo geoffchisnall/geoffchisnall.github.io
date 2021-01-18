@@ -25,7 +25,11 @@ i then decided to just glance through all the questions and get some idea of wha
 there were two questions i was struggling with and for the life of me, everything i threw at it didn't work! i had enough to pass and could have stopped right there. with me, there is no giving up and i spent the next <b>two hours</b> trying to figure it out. with an hour left, i just told myself this is not worth it as it could be something with the environment and it's something i just have to accept. i could have answered the question, or at least found the answer in another way, but i did not want to deviate from the scope of the question as the session was being recorded and was scared they would review it and find that i exploited it via another method which was not related to the question and the revoke my certification.
 </p>
 <p>
+i have to add, my experience doing the exam was not enjoyable for me. you have to connect to their environment, in a browser which is slow. you need to use their attack boxes. some or most of the tools is outdated. you are not allowed to use a second monitor and being on a laptop screen which is tiny to navigate around on is not ideal. copy and paste didn't work most of the time and switching between everything was a nightmare. 
+
+<p>
 needless to say, i recieved both my certifications and badges.
+<br>
 <img src="/assets/img/sample/CEHPRACTICAL.png">
 <img src="/assets/img/sample/CEHMASTER.png">
 </p>
