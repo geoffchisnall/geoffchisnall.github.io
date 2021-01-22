@@ -1,5 +1,5 @@
 ---
-title: postman writeup
+title: Postman Writeup
 author: mooncakeza
 date: 2019-12-22 8:00pm
 categories: [hackthebox]

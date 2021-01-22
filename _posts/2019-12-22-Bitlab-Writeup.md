@@ -1,5 +1,5 @@
 ---
-title: bitlab writeup
+title: Bitlab Writeup
 author: mooncakeza
 date: 2019-12-22 11:30am
 categories: [hackthebox]
