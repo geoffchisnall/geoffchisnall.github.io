@@ -27,11 +27,11 @@ Let's click on the login link.
 <p>
 I tried default top 10 usernames and passwords combos but nothing.
 <br>
-Since we have no credentials to try, we can try SQL injection
+Since we have no credentials, we can try SQL injection
 <br>
-username: ‘or ’1'='1
+username: 'or '1'='1
 <br>
-password: ‘or ’1'='1
+password: 'or '1'='1
 </p>
 
 <img src="/assets/img/htb/Magic/04_login_sql.png">
@@ -52,13 +52,11 @@ Let's see what can be uploaded. Let's just click upload.
 
 <p>
 
-Only JPG, JPEG and PNG files are allowed.
+Only JPG, JPEG and PNG files are allowed. We need to bypass the filter.
 <br>
-Let's go for the bypassing the filter.
+Let's first upload a JPEG file and see where it saves it to.
 <br>
-Let's upload a file and see where it saves it to.
-<br>
-It uploads it to the front page on the slider and when you right click to view image we can see it saves it under http://10.10.10.185/images/uploads/
+When we upload a picture it adds it to the front page on the slider and so we can right click to view image and we can see it saves it under http://10.10.10.185/images/uploads/
 <br>
 Now let's do some magic
 <br>
@@ -93,12 +91,13 @@ Let's get an interactive shell
 <p>
 
 <ol><li>python -c 'import pty; pty.spawn("/bin/bash")'</li><li>ctrl + z (put's the nc into the background)</li><li>echo $TERM (this gets what your term is set as)</li><li>stty -a (this gets your windows size)</li><li>stty raw -echo (NOTE: you will not see any output after this)</li><li>fg (go back to the nc)</li><li>reset (this resets the terminal settings on the remote machine</li><li>In the Terminal type, type in the $TERM output you got, in my case it was xterm-256color. </li></ol>
-
+<br>
+NOTE: as of recent, this method I found has not been working as intended and sometimes hands the termminal. 
 </p>
 
 <p>
 
-After enumerating a bit we get the following:
+After enumerating a bit we get the following.
 
 </p>
 
@@ -118,7 +117,7 @@ Let's enumerate the database. There is no mysql client installed so the only way
 
 <p>
 
-We then find this in the dump:.
+We then find this in the dump.
 
 </p>
 
@@ -143,7 +142,7 @@ Now for root.
 <br>
 We first have to upload some enumerating scripts.
 <br>
-I uploaded both LinEnum or LinPEAS and found this pretty interesting:
+I uploaded both LinEnum and LinPEAS and found this pretty interesting:
 
 </p>
 
@@ -153,7 +152,7 @@ I uploaded both LinEnum or LinPEAS and found this pretty interesting:
 
 /bin/sysinfo is executable and the user group has permissions to run it.
 <br>
-There is another tool called pspy64 which monitors linux processes and we can use this to see what it does in the background. So we run /bin/sysinfo and monitor pspy64 and see the following.
+There is another tool called pspy64 which monitors linux processes and we can use this to see what sysinfo does in the background. So we run /bin/sysinfo and monitor pspy64 and see the following.
 
 </p>
 
@@ -165,7 +164,7 @@ sysinfo calls a few files and seems like we can inject our own path to point to 
 <br>
 First in another terminal run our nc -lvnp 9994 
 <br>
-Back to the magic terminical and let us add /tmp into the system PATH
+Back to the magic terminal and let us add /tmp into the system PATH
 <br>
 export PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/bin:/usr/games:/usr/local/games:/snap/bin:/tmp
 <br>
@@ -185,7 +184,7 @@ Make it executable and then run /bin/sysinfo again and we watch pspy64.
 
 <p>
 
-You can see it has now executed our code from the fstab script we created in the /tmp directory instead of the actual operating system's fstab!
+You can see it has now executed our code from the fdisk file we created in the /tmp directory instead of the actual operating system's fdisk!
 <br>
 Let us pop to the terminal where we can our nc.
 
