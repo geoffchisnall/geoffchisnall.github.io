@@ -5,7 +5,7 @@ date: 2020-04-20 11:30am
 categories: [hackthebox]
 tags: [hackthebox, writeup]
 math: true
-image: /assets/img/htb/Magic/magic_infocard.PNG
+image: /assets/img/htb/Magic/magic_infocard.png
 ---
 
 <p>Let's do an NMAP scan</p>
