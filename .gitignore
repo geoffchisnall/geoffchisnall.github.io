@@ -3,3 +3,4 @@ Gemfile.lock
 .jar
 vendor
 deploy.sh
+.jekyll-cache
