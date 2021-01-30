@@ -39,7 +39,7 @@ You can use multiple methods to secure your accounts which is then called <b><i>
 One thing to take note is, when you use an authenticator it is vital to save the recovery codes to your computer or a safe place in the event you lose your smartphone. If the authenticator has a backup option, be sure to use that. You don't want to sit in a situation where you have lost your phone and then you have no way to use the 2FA. 
 </p>
 <p>
-<h1>Github Example for Two-Factor Authentication</h1>
+<h1>GitHub Example for Two-Factor Authentication</h1>
 <br>
 Let's have a look at how this works.
 <br>
@@ -51,7 +51,7 @@ We then get prompted to enter our Two-Factor Authentication code that is found i
 <br>
 <img src="/assets/img/2fa/github_2fa.png" style="border:2px solid black">
 <br><br>
-And now we will be logged into Github.
+And now we will be logged into GitHub.
 </p>
 <h1>Setting up Facebook for 2FA</h1>
 <p>
