@@ -1,7 +1,7 @@
 ---
 title: 2FA Your Accounts
 author: mooncakeza
-date: 2021-01-29 2:00pm
+date: 2021-01-30 10:00am
 categories: [blog, security, security awareness]
 tags: [security, security, security awareness]
 math: true
