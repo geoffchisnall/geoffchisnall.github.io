@@ -1,0 +1,131 @@
+I"<p>I configured a new subnet, 10.0.4.0/24, for BGP in the prefix-list but it did not show up in the advertised routes.</p>
+
+<p>To find the name of your prefix-list run the command <b><i>show router prefix-list</i></b>. in the below example, it is called <i>“NAME-OUT”</i></p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+</pre></td><td class="rouge-code"><pre>firewall-01 # show router prefix-list
+config router prefix-list
+	edit "NAME-OUT"
+		config rule
+			edit 1
+				set prefix 10.0.2.0 255.255.255.0
+				unset ge
+				unset le
+			next
+			edit 2
+				set prefix 10.0.3.0 255.255.255.0
+				unset ge
+				unset le
+			next
+			edit 2
+				set prefix 10.0.4.0 255.255.255.0
+				unset ge
+				unset le
+			next
+		end
+	next
+end	
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>It showed up in the prefix-list</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+</pre></td><td class="rouge-code"><pre>firewall-01 # get router info bgp prefix-list NAME-OUT
+BGP table version is 2, local is 10.10.10.1
+Status codes:s suppressed, d damped, h history, *valid &gt; best, -i internal, S Stale
+Origin codes:i - IGP, e - EGP, ? - incomplete
+
+Network		Next Hop	Metric LocPrf Weight Path
+*&gt; 10.0.2.0/24	10.0.0.1	33456 ?
+*&gt; 10.0.3.0/24	10.0.0.1	33456 ?
+*&gt; 10.0.4.0/24	10.0.0.1	33456 ?
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>But not in the advertised routes</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+</pre></td><td class="rouge-code"><pre>firewall-01 # get router info bgp neighbors 10.10.10.1 advertised-route
+BGP table version is 2, local is 10.10.10.1
+Status codes:s suppressed, d damped, h history, *valid &gt; best, -i internal, S Stale
+Origin codes:i - IGP, e - EGP, ? - incomplete
+
+Network		Next Hop	Metric LocPrf Weight Path
+*&gt; 10.0.2.0/24	10.0.0.1	33456 ?
+*&gt; 10.0.3.0/24	10.0.0.1	33456 ?
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>To resolve this I needed to do a BGP soft reset</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre>exec router clear bgp all soft
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>Once that was done, the new subnet showed up in the advertised routes</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+</pre></td><td class="rouge-code"><pre>firewall-01 # get router info bgp prefix-list NAME-OUT
+BGP table version is 2, local is 10.10.10.1
+Status codes:s suppressed, d damped, h history, *valid &gt; best, -i internal, S Stale
+Origin codes:i - IGP, e - EGP, ? - incomplete
+
+Network		Next Hop	Metric LocPrf Weight Path
+*&gt; 10.0.2.0/24	10.0.0.1	33456 ?
+*&gt; 10.0.3.0/24	10.0.0.1	33456 ?
+*&gt; 10.0.4.0/24	10.0.0.1	33456 ?
+</pre></td></tr></tbody></table></code></pre></div></div>
+<p>If it doesn’t show up, make sure you have a static route for the subnet.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+</pre></td><td class="rouge-code"><pre>firewall-01 # get router info routing-table static
+S    10.0.2.0/24 [10/0] via 10.10.1.1, port1
+S    10.0.3.0/24 [10/0] via 10.10.1.1, port1
+S    10.0.4.0/24 [10/0] via 10.10.1.1, port1
+</pre></td></tr></tbody></table></code></pre></div></div>
+:ET

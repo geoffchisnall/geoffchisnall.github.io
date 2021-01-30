@@ -1,0 +1,5 @@
+I"<p>So I came across when setting up a deny policy that it was not working.
+<br />
+After some troubleshooting I found out that because the rule was for an inbound NAT, you have to configure the <b><i>match-vip option</i></b> on the policy to enable.
+<br /></p>
+:ET

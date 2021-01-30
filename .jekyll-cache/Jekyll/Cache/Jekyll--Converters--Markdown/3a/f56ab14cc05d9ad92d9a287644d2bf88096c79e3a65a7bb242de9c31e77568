@@ -1,0 +1,6 @@
+I")<p>bashrc is a shell script that executes whenever a user logs in via bash terminal. This script can contain configuration settings such as coloring, command aliases, environment variables, etc.
+<br />
+One thing I have started doing is using it to create aliases for commands, so instead of typing out a long command I now just run a short command.
+<br />
+Whenever you edit the bashrc file you would have to reload the file from command line or logout and login again to your bash shell. To circumvent this, one method would be to do the following:</p>
+:ET

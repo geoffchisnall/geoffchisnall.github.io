@@ -1,17 +1,8 @@
----
-title: eJPT Exam
-author: mooncakeza
-date: 2020-12-21 12:00pm
-categories: [blog, exam, elearnsecurity]
-tags: [elearnsecurity, exam, certification]
-math: true
-image: /assets/img/sample/eJPT.png
----
-<p>
+I"b<p>
 So this year I have been trying to get into the pentesting/offensive side of security and trying to get my certifications going. Already having EC-Council <a href="https://www.eccouncil.org/programs/certified-network-security-course/"><b>C|ND</b></a> (Certified Network Defender) and <a href="https://www.eccouncil.org/programs/certified-ethical-hacker-ceh/"><b>C|EH</b></a> (Certified Ethical Hacker), I wanted to get some more "practical" certifications as the other two are more theory than anything else.
 </p>
 <p>
-My next certification goal is the <a href="https://www.offensive-security.com/pwk-oscpi/"><b>OSCP</b></a> (Offensive Security Certified Professional) but with the price tag of it at the moment I just cannot do it right now so i am now just focusing on the smaller certifications, like eLearnSecurity's <a href="https://elearnsecurity.com/product/ejpt-certification/"><b>eJPT</b></a> and then finish the <a href="https://www.eccouncil.org/programs/certified-ethical-hacker-ceh-master/"><b>C|EH Mastery</b></a> which requires the <a href="https://www.eccouncil.org/programs/certified-ethical-hacker-ceh-practical/"><b>C|EH Practical</b></a>. 
+My next certification goal is the <a href="https://www.offensive-security.com/pwk-oscpi/"><b>OSCP</b></a> (Offensive Security Certified Professional) but with the price tag of it at the moment I just cannot do it right now so i am now just focusing on the smaller certifications, like eLearnSecurity's <a href="https://elearnsecurity.com/product/ejpt-certification/"><b>eJPT</b></a> and then finish the <a href="https://www.eccouncil.org/programs/certified-ethical-hacker-ceh-master/"><b>C|EH Mastery</b></a> which requires the <a href="https://www.eccouncil.org/programs/certified-ethical-hacker-ceh-practical/"><b>C|EH Pratical</b></a>. 
 I have also been considering <a href="https://www.comptia.org/certifications/security"><b>CompTIA Security+</b></a> and <a href="https://www.comptia.org/certifications/pentest"><b>CompTIA PenTest+</b></a>.
 </p>
 <p>
@@ -36,7 +27,7 @@ What should have been a 2 hour pentest for me, turned into 6 hours. It was annoy
 At hour 3 I already knew I had the 15 points required, but really wanted 20, so I spent quite a bit overthinking the simplest of things.
 Once I decided enough was enough I clicked submit and was welcomed with
 <p>
-<img src="/assets/img/sample/eJPTcongrats.png">
+<img src="/assets/img/sample/eJPTcongrats.png" />
 </p>
 <p>
 I got 18/20 and I am not even sure which 2 questions I had wrong, they don't tell you! I really want to know!
@@ -65,4 +56,5 @@ This is definitley a good exam to start as a stepping stone into the offensive s
 <li>sqlmap</li>
 <li>john</li>
 </ul>
-
+</p>
+:ET

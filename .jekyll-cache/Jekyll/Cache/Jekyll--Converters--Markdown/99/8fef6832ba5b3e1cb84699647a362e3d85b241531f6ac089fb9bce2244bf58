@@ -1,0 +1,2 @@
+I"{<p>I configured a new subnet, 10.0.4.0/24, for BGP in the prefix-list but it did not show up in the advertised routes.</p>
+:ET

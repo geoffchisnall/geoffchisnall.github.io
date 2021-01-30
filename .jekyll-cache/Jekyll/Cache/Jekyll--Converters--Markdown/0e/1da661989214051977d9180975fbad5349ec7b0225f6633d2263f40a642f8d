@@ -1,0 +1,67 @@
+I"(
+<div id="tags" class="d-flex flex-wrap ml-xl-2 mr-xl-2">
+
+
+
+
+
+
+  <div>
+    <a class="tag" href="/tags/alias/">alias<span class="text-muted">1</span></a>
+  </div>
+
+  <div>
+    <a class="tag" href="/tags/bash/">bash<span class="text-muted">1</span></a>
+  </div>
+
+  <div>
+    <a class="tag" href="/tags/certification/">certification<span class="text-muted">2</span></a>
+  </div>
+
+  <div>
+    <a class="tag" href="/tags/eccouncil/">eccouncil<span class="text-muted">1</span></a>
+  </div>
+
+  <div>
+    <a class="tag" href="/tags/elearnsecurity/">elearnsecurity<span class="text-muted">1</span></a>
+  </div>
+
+  <div>
+    <a class="tag" href="/tags/exam/">exam<span class="text-muted">2</span></a>
+  </div>
+
+  <div>
+    <a class="tag" href="/tags/firewall/">firewall<span class="text-muted">4</span></a>
+  </div>
+
+  <div>
+    <a class="tag" href="/tags/fortigate/">fortigate<span class="text-muted">4</span></a>
+  </div>
+
+  <div>
+    <a class="tag" href="/tags/fortinet/">fortinet<span class="text-muted">4</span></a>
+  </div>
+
+  <div>
+    <a class="tag" href="/tags/hackthebox/">hackthebox<span class="text-muted">5</span></a>
+  </div>
+
+  <div>
+    <a class="tag" href="/tags/linux/">linux<span class="text-muted">1</span></a>
+  </div>
+
+  <div>
+    <a class="tag" href="/tags/security/">security<span class="text-muted">2</span></a>
+  </div>
+
+  <div>
+    <a class="tag" href="/tags/security-awareness/">security awareness<span class="text-muted">1</span></a>
+  </div>
+
+  <div>
+    <a class="tag" href="/tags/writeup/">writeup<span class="text-muted">5</span></a>
+  </div>
+
+
+</div>
+:ET

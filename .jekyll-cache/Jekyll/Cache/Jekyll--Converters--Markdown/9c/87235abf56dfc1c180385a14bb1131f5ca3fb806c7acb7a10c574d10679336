@@ -1,0 +1,35 @@
+I"ë<p>I have been having an issue with setting up an IPSEC tunnel between a client and me.
+Setting it up as per the spec and it was not connecting. It was hard to diagnose from the frontend as the frontend logs are pretty much useless for troubleshooting.</p>
+
+<p>So we have to do this via the CLI (command line interface). To achieve this just run the following commands.</p>
+
+<p>To get the tunnel name:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+</pre></td><td class="rouge-code"><pre>firewall-01 # get vpn ipsec tunnel summary
+'IPSEC_TUN_01' 10.0.0.1:0 selectors(total,up): 1/0 rx(pkt,err): 0/0 tx(pkt,err): 0/0
+
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>Setup the log to filter only the selected tunnel</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+</pre></td><td class="rouge-code"><pre>firewall-01 # diagnose vpn ike log-filter name "IPSEC_TUN_01"
+
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>Setup to debug</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+</pre></td><td class="rouge-code"><pre>firewall-01 # diagnose debug application ike -1
+firewall-01 # diagnose debug enable
+
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>Once that is done, your terminal will be outputting the IPSEC log which you can look at to diagnose for more troubleshooting.</p>
+:ET
