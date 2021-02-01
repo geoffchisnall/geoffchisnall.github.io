@@ -16,7 +16,8 @@ description: >-                        # used by seo meta and the atom feed
           journey of a newb infosec pleb
 
 # Replace with the website url, e.g. 'https://username.github.io'
-url: 'https://geoffchisnall.github.io'
+#url: 'https://geoffchisnall.github.io'
+url: 'https://www.logoff.co.za'
 
 author: mooncake                  # change to your full name
 
