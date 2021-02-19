@@ -8,4 +8,24 @@ layout: page
 ---
 
 
-<b>Test</b>
+{% assign pinned = site.posts | where_exp: "item", "item.pin == true"  %}
+{% assign default = site.posts | where_exp: "item", "item.pin != true"  %}
+{% assign posts = "" | split: "" %}
+
+<!-- Get pinned posts -->
+
+{% assign offset = paginator.page | minus: 1 | times: paginator.per_page %}
+{% assign pinned_num = pinned.size | minus: offset %}
+
+{% if pinned_num > 0 %}
+  {% for i in (offset..pinned.size) limit: pinned_num %}
+    {% assign posts = posts | push: pinned[i] %}
+  {% endfor %}
+{% else %}
+  {% assign pinned_num = 0 %}
+{% endif %}
+
+
+{% if paginator.total_pages > 0 %}
+  {% include post-paginator.html %}
+{% endif %}
