@@ -3,7 +3,7 @@ title: Traverxec Writeup
 author: mooncakeza
 date: 2019-12-24 18:30am
 categories: [hackthebox]
-tags: [hackthebox, writeup]
+tags: [hackthebox, writeup, traverxec]
 math: true
 image: /assets/img/htb/Traverxec/traverxec_infocard.PNG
 ---

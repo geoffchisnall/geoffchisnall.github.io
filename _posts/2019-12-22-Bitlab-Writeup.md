@@ -3,7 +3,7 @@ title: Bitlab Writeup
 author: mooncakeza
 date: 2019-12-22 11:30am
 categories: [hackthebox]
-tags: [hackthebox, writeup]
+tags: [hackthebox, writeup, bitlab]
 math: true
 image: /assets/img/htb/Bitlab/bitlab_infocard.PNG
 ---

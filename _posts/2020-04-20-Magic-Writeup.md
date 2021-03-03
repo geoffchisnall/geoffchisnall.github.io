@@ -3,7 +3,7 @@ title: Magic Writeup
 author: mooncakeza
 date: 2020-04-20 11:30am
 categories: [hackthebox]
-tags: [hackthebox, writeup]
+tags: [hackthebox, writeup, magic]
 math: true
 image: /assets/img/htb/Magic/magic_infocard.png
 ---

@@ -3,7 +3,7 @@ title: Resolute Writeup
 author: mooncakeza
 date: 2019-12-24 11:30am
 categories: [hackthebox]
-tags: [hackthebox, writeup]
+tags: [hackthebox, writeup, resolute]
 math: true
 image: /assets/img/htb/Resolute/resolute_infocard.PNG
 ---

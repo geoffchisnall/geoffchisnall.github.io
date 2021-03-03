@@ -3,7 +3,7 @@ title: Postman Writeup
 author: mooncakeza
 date: 2019-12-22 8:00pm
 categories: [hackthebox]
-tags: [hackthebox, writeup]
+tags: [hackthebox, writeup, postman]
 math: true
 image: /assets/img/htb/Postman/postman_infocard.PNG
 ---
