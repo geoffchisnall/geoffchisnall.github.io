@@ -46,7 +46,7 @@ Let's register a user and then login.
 <img src="/assets/img/htb/Passage/06_login.png" style="border:2px solid black">
 
 <p>
-Browsing around didn't give me anything much to play with so then I checked the version of CuteNews and see if there is maybe an exploit in the current software version.
+Browsing around didn't give me anything much to play with so then I checked the version of CuteNews and see if there is maybe an exploit in the current software version with <b><i>searchsploit</i></b>
 </p>
 
 <img src="/assets/img/htb/Passage/07_cutenews_version.png" style="border:2px solid black">
