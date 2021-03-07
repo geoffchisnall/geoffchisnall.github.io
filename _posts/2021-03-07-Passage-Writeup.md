@@ -17,7 +17,7 @@ Let's start off with a NMAP scan
 <img src="/assets/img/htb/Passage/01_nmap.png" style="border:2px solid black">
 
 <p>
-Browsing to <i>http://10.10.10.106</i> we get a page wth a bunch of posts, users and email addresses.
+Browsing to <i>http://10.10.10.206</i> we get a page wth a bunch of posts, users and email addresses.
 </p>
 
 <img src="/assets/img/htb/Passage/02_frontpage.png" style="border:2px solid black">
