@@ -74,7 +74,7 @@ So we are going to download the file via searchsploit, copy it to metasploit to 
 <p>
 We then have to configure the options. 
 <br>
-Set the rhosts, lhost and also set the username and password to what we registered as above.
+Set the rhosts, lhost (your tun0 ip address) and also set the username and password to what we registered as above.
 </p>
 
 <img src="/assets/img/htb/Passage/12_cutenews_options.png" style="border:2px solid black">
