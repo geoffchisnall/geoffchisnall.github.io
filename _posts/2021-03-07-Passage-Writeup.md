@@ -132,7 +132,7 @@ Now we run hashcat.
 <img src="/assets/img/htb/Passage/21_hashcat_end.png" style="border:2px solid black">
 
 <p>
-We now have a password for the hash <i>e26f3e86d1f8108120723ebe690e5d3d61628f4130076ec6cb43f16f497273cd</i> and looking at the file from previously we can see that this hash belongs to <i>paul@passage.htb</i>
+We now have a password for the hash <i>e26f3xxxxxf8108120723ebe690e5d3d61628f4130076ec6cb43f16f497273cd</i> and looking at the file from previously we can see that this hash belongs to <i>paul@passage.htb</i>
 </p>
 
 <p>
@@ -212,5 +212,5 @@ Copy the key and use the key to ssh into the server as root and grab the root fl
 <img src="/assets/img/htb/Passage/34_passage_root.png" style="border:2px solid black">
 
 <p>
-This was a pretty fun box I have to say. Thank you ChefByzen for a great box as usual!
+This was a pretty fun box I have to say. Thank you ChefByzen for a great box!
 </p>
