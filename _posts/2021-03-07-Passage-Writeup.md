@@ -110,7 +110,7 @@ We need to get the hashes and then base64 decode them but first we need to prepa
 <img src="/assets/img/htb/Passage/17_hash_base64decode.png" style="border:2px solid black">
 
 <p>
-Then we manually have to take the following and add it to a file.
+Then we manually have to take the following hashes and add it to a file.
 </p>
 
 <img src="/assets/img/htb/Passage/18_hashes.png" style="border:2px solid black">
