@@ -1,7 +1,7 @@
 ---
 title: Passage Writeup
 author: mooncakeza
-date: 2021-03-07 9:40am
+date: 2021-03-07 9:40pm
 categories: [hackthebox]
 tags: [hackthebox, writeup, passage]
 math: true
