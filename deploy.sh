@@ -6,5 +6,5 @@ _scripts/sh/dump_lastmod.sh
 
 echo 'pushing to github'
 git add --all
-git commit -m "pushing to repo"
+git commit -m "Google verification and SEO"
 git push
