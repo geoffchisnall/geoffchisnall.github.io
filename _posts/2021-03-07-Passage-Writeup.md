@@ -110,7 +110,9 @@ We need to get the hashes and then base64 decode them but first we need to prepa
 <img src="/assets/img/htb/Passage/17_hash_base64decode.png" style="border:2px solid black">
 
 <p>
-Then we manually have to take the following hashes and add it to a file.
+ I manually added the hashes to a file.
+But you could run the following to grab the hashes: <b><i>cat lines.hashed | grep -oP [a-z0-9]{64} > hashes </i></b>
+
 </p>
 
 <img src="/assets/img/htb/Passage/18_hashes.png" style="border:2px solid black">
