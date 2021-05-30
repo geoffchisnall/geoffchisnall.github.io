@@ -6,5 +6,5 @@ _scripts/sh/dump_lastmod.sh
 
 echo 'pushing to github'
 git add --all
-git commit -m "Passage HackTheBox writeup"
+git commit -m "Updating"
 git push
