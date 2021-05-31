@@ -6,5 +6,5 @@ _scripts/sh/dump_lastmod.sh
 
 echo 'pushing to github'
 git add --all
-git commit -m "Updating"
+git commit -m "hashcat prepend rules post"
 git push
