@@ -141,9 +141,8 @@ Let's identify the type of hash.
 
 ![Desktop-View](/assets/img/pg/funboxeasyenum/Identify Hash.png)
 
-This doesn't seem to be a straight MD5 hash.
 <br>
-Let us rather use [hashcat examples](https://www.google.com/search?client=firefox-b-d&q=hashcat+examples) to verify.
+Let us check [hashcat examples](https://www.google.com/search?client=firefox-b-d&q=hashcat+examples) to verify.
 <br>
 As we can see it's a md5Crypt hash.
 
