@@ -2,8 +2,8 @@
 title: FunboxEasyEnum Writeup
 author: mooncakeza
 date: 2021-06-01 08:30am
-categories: [writeup, offsec, provinggrounds]
-tags: [writeup, offsec, provinggrounds]
+categories: [writeup, offsec, proving grounds]
+tags: [writeup, offsec, proving grounds]
 math: true
 mermaind: true
 image: /assets/img/pg/provinggrounds.png
@@ -11,7 +11,7 @@ image: /assets/img/pg/provinggrounds.png
 
 This is my first Offensive Security writeup of a machine on their Proving Grounds platform. 
 <br>
-I signed up for the free 3 hour trial and managed to do 2 easy machines and get this writeup done before the timer expired.
+I signed up for the free labs and managed to do 2 easy machines and get this writeup done before the daily 3 hour timer expired.
 
 ## Enumeration
 
