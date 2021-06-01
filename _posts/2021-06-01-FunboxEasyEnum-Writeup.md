@@ -9,7 +9,7 @@ mermaind: true
 image: /assets/img/pg/provinggrounds.png
 ---
 
-This is my first Offensive Security writeup of a machine on their Proving Grounds platform. 
+This is my first <a href="https://www.offensive-security.com/">Offensive Security</a> writeup of a machine on their <a href="https://www.offensive-security.com/labs/">Proving Grounds</a> platform. 
 <br>
 I signed up for the free labs and managed to do 2 easy machines and get this writeup done before the daily 3 hour timer expired.
 
