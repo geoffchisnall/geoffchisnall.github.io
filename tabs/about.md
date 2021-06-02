@@ -8,5 +8,4 @@ title: About
 # MIT License
 ---
 
-blah blah fish paste
-
+<img src="http://www.hackthebox.eu/badge/image/46826" alt="Hack The Box" />
