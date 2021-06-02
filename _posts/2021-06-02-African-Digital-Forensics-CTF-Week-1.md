@@ -48,7 +48,7 @@ I went straight to the location of the <b>Recycle Bin</b> to check what files we
 
 ![week1](/assets/img/ctf/dfir/week1/1.0 recyclebin.png)
 
-There was only one file in there so we can easily see that it the intended file and we can see the date and time it was deleted.
+There was only one file in there so we can easily see that it's the intended file and we can see the date and time it was deleted.
 
 ![week1](/assets/img/ctf/dfir/week1/1.1 deleted.png)
 
@@ -389,7 +389,7 @@ I used same method with the same rule for hashcat
 <br>
 Week 1 was done and I enjoyed it tons! I had never used Autopsy before so this was a great way to learn it!
 <br>
-If you do see any mistakes, spelling, grammer, formatting, please let me know. I tried to so the best I could with this writeup but I am sure I might have done some mistakes :)
+If you do see any mistakes, spelling, grammer, formatting, please let me know. I tried to do the best I could with this writeup but I am sure I might have done some mistakes :)
 <br>
 <br>
 <b>Stay tuned for week 2 write up in the next few days</b>
