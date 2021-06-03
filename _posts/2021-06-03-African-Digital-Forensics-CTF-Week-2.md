@@ -9,8 +9,6 @@ mermaind: true
 image: /assets/img/ctf/dfir/cybercrime-logo.png
 ---
 
-# Week2 
-
 ![week2](/assets/img/ctf/dfir/week2/week2 data.png)
 <br>
 
