@@ -285,7 +285,7 @@ Back to the main Autopsy window we go to <b>Shell Bags</b> on the left.
 <br>
 
 Now I cannot remember what the actual answer was but it was one of the following.
-I am not sure if I guessed it or not but if someone can let me know if you can find  the proof. Knowing how photos are saved I think it would have been <b>Camera</b>
+If someone can let me know if you can find the proof. I think it could have been either <b>Camera</b> or <b>DCIM</b>. 
 <br>
 
 ![week1](/assets/img/ctf/dfir/week1/9.8 image location.png)
