@@ -9,10 +9,11 @@ mermaind: true
 image: /assets/img/ctf/dfir/cybercrime-logo.png
 ---
 
-![week2](/assets/img/ctf/dfir/week2/week2 data.png)
+# Week 2
 <br>
-
 We were given a RAM Acquisition of the suspect disk for week 2. 
+<br>
+![week2](/assets/img/ctf/dfir/week2/week2 data.png)
 <br>
 A RAM Acquisition is just a procedure of copying the contents of volatile memory to non-volatile storage.
 <br>
