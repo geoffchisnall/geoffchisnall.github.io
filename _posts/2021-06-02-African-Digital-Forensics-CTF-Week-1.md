@@ -387,6 +387,7 @@ I used same method with the same rule for hashcat
 ![week1](/assets/img/ctf/dfir/week1/11.10 hash cracked.png)
 <br>
 <br>
+### Conclusion
 Week 1 was done and I enjoyed it tons! I had never used Autopsy before so this was a great way to learn it!
 <br>
 If you do see any mistakes, spelling, grammer, formatting, please let me know. I tried to do the best I could with this writeup but I am sure I might have done some mistakes :)
