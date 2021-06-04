@@ -49,7 +49,7 @@ Now the thing with this challenge was, I had no idea how long the password would
 A hint came out and it was basically said to use rules with dictionaries or masking. The masking was pretty much explained as, passwords usually start with an uppercase, ends with a ! and most times end with the 2nd last and 3rd last characters are lowercase and it seemed like it was hinted that the password was 8 characters long.  So with that in mind, you could do the following mask:
 <br>
 ```
-hashcat -m 13600 -a 3 password.hash ?u?a?a?a?a??l?l!
+hashcat -m 13600 -a 3 password.hash ?u?a?a?a?a?l?l!
 ```
 <br>
 For me this would take a month to crack and this challenge only less than a week left! Back to the drawing board. Luckily, I knew someone, thanks NeonPegasus, with a beefy GPU so I asked them to throw it against that and see how long it would take to bruteforce. 
