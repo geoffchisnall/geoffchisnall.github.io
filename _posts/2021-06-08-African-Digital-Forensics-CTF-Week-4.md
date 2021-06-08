@@ -153,7 +153,7 @@ I also remember QuickCrypto being installed on the system.
 
 This one was pretty challenging. We had to download a certain image, I named it <b>suspicious.jpg</b>
 
-![week4](/assets/img/ctf/dfir/week4/9.1 suspicious image.png)
+![week4](/assets/img/ctf/dfir/week4/9.1 suspicious image.png){:height="337px" width="250px"}
 
 We had to find the same image that was taken on the phone.
 <br>
