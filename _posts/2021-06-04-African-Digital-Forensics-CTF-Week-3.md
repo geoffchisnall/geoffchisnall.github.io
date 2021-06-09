@@ -9,10 +9,13 @@ mermaind: true
 image: /assets/img/ctf/dfir/cybercrime-logo.png
 ---
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 7e5856b16ea27439394e379f635c7d4c4d16773c
 # Week3
 
 This week we were given a network dump in the form of a PCAP file.
-
 
 ![week3](/assets/img/ctf/dfir/week3/week3_data.png)
 
@@ -21,7 +24,6 @@ There were 13 challenge questions this week.
 ![week3](/assets/img/ctf/dfir/week3/week3_tasks.png)
 
 To be able to analyze this PCAP file we needed to use a program called [Wireshark](https://www.wireshark.org/).
-
 
 ### 1) DNS
 
@@ -377,7 +379,11 @@ I had to rethink this. This was when I saw a hint saying what the structure coul
 <br>
 The first method I tried was to bruteforce it with the following. 
 <br>
+<<<<<<< HEAD
 Thanks to [Neonpegasus](https://twitter.com/JacqueSmit69) for your GPU!
+=======
+Thanks to [Neonpegasus](https://www.twitter.com/JacqueSmit69) for your GPU!
+>>>>>>> 7e5856b16ea27439394e379f635c7d4c4d16773c
 
 ```sh
 hashcat -m 13600 -a 3 accountNum.hash ?u?a?a?a?a?l?l!
