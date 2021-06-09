@@ -388,7 +388,6 @@ hashcat -m 13600 -a 3 accountNum.hash ?u?a?a?a?a?l?l!
 ![week3](/assets/img/ctf/dfir/week3/13.8 hash cracked.png)
 
 <br>
-
 The second method I did while waiting for the above was a bit more behind my method of attacking it. 
 <br>
 I thought about this logically as a typical user and thought, what do we as humans do with passwords? We repeat passwords but just add or change a certain aspect of it. e.g Rover21April –> Rover21May  
