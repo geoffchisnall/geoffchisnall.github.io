@@ -9,12 +9,9 @@ mermaind: true
 image: /assets/img/ctf/dfir/cybercrime-logo.png
 ---
 
-
-
 # Week3
 
 This week we were given a network dump in the form of a PCAP file.
-
 
 ![week3](/assets/img/ctf/dfir/week3/week3_data.png)
 
@@ -23,7 +20,6 @@ There were 13 challenge questions this week.
 ![week3](/assets/img/ctf/dfir/week3/week3_tasks.png)
 
 To be able to analyze this PCAP file we needed to use a program called [Wireshark](https://www.wireshark.org/).
-
 
 ### 1) DNS
 
