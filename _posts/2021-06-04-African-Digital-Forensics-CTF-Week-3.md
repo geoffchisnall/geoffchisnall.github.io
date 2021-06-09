@@ -9,8 +9,6 @@ mermaind: true
 image: /assets/img/ctf/dfir/cybercrime-logo.png
 ---
 
-
-
 # Week3
 
 This week we were given a network dump in the form of a PCAP file.
@@ -109,7 +107,7 @@ ip.src_host == 192.168.1.26 and ip.dst_host == 24.39.217.246 and udp
 ![week3](/assets/img/ctf/dfir/week3/week3_Domains.png)
 
 For this one we need to see the <b>TLS Client Hello</b> packets and see what domains they were communicting with.
-
+<br>
 We can do this by running the following search
 
 ```sh
@@ -125,13 +123,13 @@ We now have to go through each packet and manually check and eventually we find 
 ![week3](/assets/img/ctf/dfir/week3/week3_Image data.png)
 
 The challenge question mentioned a <b>.jpg</b> so my first thought was to see if it was downloaded with <b>FTP</b>.
-
+<br>
 I searched for  <b>ftp-data</b> and found the following
 
 ![week3](/assets/img/ctf/dfir/week3/7.1 jpg data.png)
 
 We can right click on highlighted packet in the above, select <b>Follow</b> and then select <b>TCP Stream</b> or alternativley you can press <b>Ctrl+Alt+Shift+T</b>
-
+<br>
 We can see in the stream the created date.
 
 ![week3](/assets/img/ctf/dfir/week3/7.2 time taken.png)
@@ -379,7 +377,7 @@ I had to rethink this. This was when I saw a hint saying what the structure coul
 <br>
 The first method I tried was to bruteforce it with the following. 
 <br>
-Thanks to Neonpegasus for your GPU!
+Thanks to [Neonpegasus](https://twitter.com/JacqueSmit69) for your GPU!
 
 ```sh
 hashcat -m 13600 -a 3 accountNum.hash ?u?a?a?a?a?l?l!
@@ -388,7 +386,6 @@ hashcat -m 13600 -a 3 accountNum.hash ?u?a?a?a?a?l?l!
 ![week3](/assets/img/ctf/dfir/week3/13.8 hash cracked.png)
 
 <br>
-
 The second method I did while waiting for the above was a bit more behind my method of attacking it. 
 <br>
 I thought about this logically as a typical user and thought, what do we as humans do with passwords? We repeat passwords but just add or change a certain aspect of it. e.g Rover21April –> Rover21May  
@@ -445,6 +442,5 @@ hashcat -m 13600 -a 1 accountNum.hash words.file rockyou.txt
 <br>
 This was by far the most challenging week and definitly questioned my sanity again! 
 <br>
-
 <b>STAY TUNED FOR WEEK 4 WRITE UP SOON!</b>
 

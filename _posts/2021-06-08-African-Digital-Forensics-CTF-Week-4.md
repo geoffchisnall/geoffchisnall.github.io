@@ -9,7 +9,6 @@ mermaind: true
 image: /assets/img/ctf/dfir/cybercrime-logo.png
 ---
 
-
 # Week4
 
 This was the final week and we were given an Android dump.
@@ -58,9 +57,13 @@ So the answer is asked for in UTC time so the answer would be <b> 2021-04-29 19:
 ![week4](/assets/img/ctf/dfir/week4/week4_Email.png)
 
 This one I found in the <b>Agent Data</b> folder.
+<br>
 There is a file <b>contacts3.db</b>. 
+<br>
 The .db file is a sqlite database file.
+<br>
 So I opened it up in sqlite3 and found the email address.
+<br>
 
 ![week4](/assets/img/ctf/dfir/week4/3.1 contacts sqlite.png)
 
@@ -82,7 +85,7 @@ If you want to manually check, you can just check the <b>usage_stats.txt</b> fil
 ![week4](/assets/img/ctf/dfir/week4/week4_Power!.png)
 
 Here we go to a file <b>Live Data/Dumpsys Data/batterystats.txt</b>
-
+<br>
 We see the time the device was reset.
 
 ![week4](/assets/img/ctf/dfir/week4/5.1 reset time.png)
@@ -92,7 +95,7 @@ We now have to look for when the device charged to 100%.
 ![week4](/assets/img/ctf/dfir/week4/5.2 fully charged.png)
 
 Now we need to calculate the time of when the device charged to 100%.
-
+<br>
 So we just need to take 13:12:19 and add 5 minutes, 1 second and 459 milli seconds to it but then round it off to the nearest second.
 
 <b>2021-05-21 13:17:20</b>
@@ -170,7 +173,7 @@ When we do a <b>binwalk</b> we can clearly see something is up with the <b>suspi
 ![week4](/assets/img/ctf/dfir/week4/9.2 something is up.png)
 
 I did a google search for <b>find the structurual similarity metric of jpg</b>
-
+<br>
 I came across the following page 
 <br>
 [How to calculate the Structural Similarity Index (SSIM) between two images with Python](https://ourcodeworld.com/articles/read/991/how-to-calculate-the-structural-similarity-index-ssim-between-two-images-with-python)
@@ -216,5 +219,3 @@ Android forensics went better than I thought. I thought we would have to use And
 Thank you for reading these write ups. It was fun to redo them.
 <br>
 I am by no means a DFIR guru but this was a very fun CTF to do.
-
-
