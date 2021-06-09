@@ -9,7 +9,6 @@ mermaind: true
 image: /assets/img/ctf/dfir/cybercrime-logo.png
 ---
 
-
 # Week4
 
 This was the final week and we were given an Android dump.
@@ -216,5 +215,3 @@ Android forensics went better than I thought. I thought we would have to use And
 Thank you for reading these write ups. It was fun to redo them.
 <br>
 I am by no means a DFIR guru but this was a very fun CTF to do.
-
-
