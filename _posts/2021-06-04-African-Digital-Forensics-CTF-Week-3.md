@@ -9,10 +9,6 @@ mermaind: true
 image: /assets/img/ctf/dfir/cybercrime-logo.png
 ---
 
-<<<<<<< HEAD
-=======
-
->>>>>>> 7e5856b16ea27439394e379f635c7d4c4d16773c
 # Week3
 
 This week we were given a network dump in the form of a PCAP file.
