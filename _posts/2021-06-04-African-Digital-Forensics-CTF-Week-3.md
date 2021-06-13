@@ -375,11 +375,7 @@ I had to rethink this. This was when I saw a hint saying what the structure coul
 <br>
 The first method I tried was to bruteforce it with the following. 
 <br>
-<<<<<<< HEAD
-Thanks to [Neonpegasus](https://twitter.com/JacqueSmit69) for your GPU!
-=======
 Thanks to [Neonpegasus](https://www.twitter.com/JacqueSmit69) for your GPU!
->>>>>>> 7e5856b16ea27439394e379f635c7d4c4d16773c
 
 ```sh
 hashcat -m 13600 -a 3 accountNum.hash ?u?a?a?a?a?l?l!

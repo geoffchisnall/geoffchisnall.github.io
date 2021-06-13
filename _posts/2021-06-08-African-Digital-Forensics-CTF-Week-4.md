@@ -218,8 +218,4 @@ Android forensics went better than I thought. I thought we would have to use And
 <br>
 Thank you for reading these write ups. It was fun to redo them.
 <br>
-<<<<<<< HEAD
 I am by no means a DFIR guru but this was a very fun CTF to do.
-=======
-I am by no means a DFIR guru but this was a very fun CTF to do.
->>>>>>> 7e5856b16ea27439394e379f635c7d4c4d16773c
