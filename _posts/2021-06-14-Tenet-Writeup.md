@@ -110,9 +110,9 @@ We can see it could be some sort of <b>PHP Deserialization RCE</b>
 <br>
 Looking at the following articles we can get an idea of what needs to be done.
 <br>
-[https://github.com/1N3/Exploits/blob/master/PHP-Serialization-RCE-Exploit.php](https://github.com/1N3/Exploits/blob/master/PHP-Serialization-RCE-Exploit.php)
+- [https://github.com/1N3/Exploits/blob/master/PHP-Serialization-RCE-Exploit.php](https://github.com/1N3/Exploits/blob/master/PHP-Serialization-RCE-Exploit.php)
 <br>
-[https://medium.com/swlh/exploiting-php-deserialization-56d71f03282a](https://medium.com/swlh/exploiting-php-deserialization-56d71f03282a)
+- [https://medium.com/swlh/exploiting-php-deserialization-56d71f03282a](https://medium.com/swlh/exploiting-php-deserialization-56d71f03282a)
 <br>
 We create our own PHP file with the following to add our reverse shell code into a file called moo.php and then call it to create a reverse shell.
 
