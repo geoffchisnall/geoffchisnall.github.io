@@ -106,7 +106,7 @@ essentially looking at the code it seems we can create our own php file and inse
 <br>
 We just have to create our own php file with code to do this request.
 <br>
-We can see it could be some sort of <b>PHP Serialization RCE</b>
+We can see it could be some sort of <b>PHP Deserialization RCE</b>
 <br>
 Looking at the following articles we can get an idea of what needs to be done.
 <br>
