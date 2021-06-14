@@ -8,7 +8,9 @@ math: true
 image: /assets/img/htb/Tenet/00 - tenet infocard.png
 ---
 
-### 1) Reconnaissance
+### Reconnaissance
+
+Let us start with a basic enumeration with nmap.
 
 ```bash
 sudo nmap -sC -sV
@@ -97,7 +99,7 @@ $app -> update_db();
 ?>
 ```
 
-### 2) Foothold
+### Foothold
 
 I struggle with these types of challenges but 
 essentially looking at the code it seems we can create our own php file and insert data to get RCE.
@@ -146,7 +148,7 @@ We get a reverse shell on our netcat.
 
 ![Tenet](/assets/img/htb/Tenet/10 - reverse shell.png){:.align-center}
 
-### 3) User
+### User
 
 Seeing that this is a wordpress site the first place I usually go and check for credentials is the <b>wp-config.conf</b>>. 
 <br>
@@ -155,8 +157,7 @@ Jackpot.
 ![Tenet](/assets/img/htb/Tenet/11 - wordpress details.png){:.align-center}
 <br>
 I use those details to ssh into the machine and we have user on the box.
-
-### 4) User Flag
+<br>
 
 ![Tenet](/assets/img/htb/Tenet/12 - neil user.png){:.align-center}
 <br>
@@ -164,7 +165,7 @@ We check and there is the user flag.
 <br>
 ![Tenet](/assets/img/htb/Tenet/13 - user flag.png){:.align-center}
 
-### 5) Privilege Escalation
+### Privilege Escalation
 
 Now for privsec
 <br>
