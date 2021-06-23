@@ -40,6 +40,8 @@ password: 'or '1'='1
 
 We get prompted with an upload page for images.
 
+</p>
+
 <img src="/assets/img/htb/Magic/05_upload_img.png">
 
 <p>

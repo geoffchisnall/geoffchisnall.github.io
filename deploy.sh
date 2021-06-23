@@ -6,5 +6,5 @@ _scripts/sh/dump_lastmod.sh
 
 echo 'pushing to github'
 git add --all
-git commit -m "Tenet Writeup post"
+git commit -m "fixed formatting"
 git push
