@@ -7,6 +7,7 @@ tags: [tryhackme, writeup, sweettoothinc]
 math: true
 image: /assets/img/thm/sweettoothinc/heading.png
 ---
+###### With this writeup I decided to not do it with screenshots but rather code snippets. It does look a bit messy. I think next time I will stick to screenshots too.
 
 With this challenge we had to answer some questions while getting the `user.txt` and `root.txt` flags.
 
