@@ -238,8 +238,8 @@ It took a bit to understand how to query the API but eventually managed reading 
 
 We can send the following to list the databases.
 
-**NOTE: I AM PIPING THE QUERY TO JQ TO MAKE THE OUTPUT MORE READABLE. 
-YOU WILL HAVE TO INSTALL IT. **
+<b>NOTE: I AM PIPING THE QUERY TO JQ TO MAKE THE OUTPUT MORE READABLE. 
+YOU WILL HAVE TO INSTALL IT.</b>
 
 ```
 curl -s 'http://10.10.243.165:8086/query' -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Im81eVk2eXlhIiwiZXhwIjoxNzI3Mzg4NDAzfQ.EmsmI208Oc2CNoiICnC3T4ftmwbJygAZkECpjam4PXQ" -X POST --data-urlencode 'q=show databases' | jq
